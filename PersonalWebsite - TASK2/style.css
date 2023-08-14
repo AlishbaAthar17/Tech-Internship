@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+body{
+    min-height: 1000px;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img.png);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h3{
+    font-size: 2em;
+    font-weight: 500;
+    color: black;
+}
+.banner .content h2{
+    font-size: 3em;
+    margin-top: -11px;
+}
+
+.banner .content p{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: -11px;
+}
+.btn1{
+    font-size: 1em;
+    color: #000000;
+    background:linear-gradient(to right, #46889c, #72c8e2);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn1:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index:10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+header .navigation li a:hover{
+    color:#46889c
+}
+section{
+    padding: 100px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 35%;
+    margin-left: 52px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 550.5px;
+    width: 334.5px;
+    opacity: 0;
+    transition: .5s ease;
+    background:linear-gradient(to right, #46889c, #72c8e2);
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+  
+.imgBx:hover .overlay {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.img{
+    border:2px solid #fffefe;
+  -moz-box-shadow: 10px 10px 5px #46889c;
+  -webkit-box-shadow: 10px 10px 5px #46889c;
+  box-shadow: 10px 10px 5px #46889c;
+  -moz-border-radius:25px;
+  -webkit-border-radius:25px;
+  border-radius:25px;
+}
+
+.titleText{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span{
+    color:#46889c;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+.project .content .box{
+    width: 340px;
+    margin: 70px;
+    border: 6px solid #46889c;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.project .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.project .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project .content .box .text1{
+    padding: 15px 0 5px;
+}
+.project .content .box .text1 h3{
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+}
+
+.content .services1{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border: 6px solid #46889c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
+}
+
+.services1 .content1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+}
+.services1 .content1 .icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+}
+.services1:hover{
+    transition: 0.5s ease-in-out;
+    background: #b9e4f1;
+}
+.services1 h3{
+    font-weight: 600;
+}
+.contact1{
+    background: url(img.png);
+    background-size: cover;
+}
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    margin-left: 496px;
+}
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #000000;
+    background:linear-gradient(to right, #46889c, #72c8e2);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* transition: 0.5s; */
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.inputBox input[type="submit"]:hover{
+    letter-spacing: 6px;
+}
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.copyrightText p{
+    color: #333;
+}
+.copyrightText a{
+    color: #46889c;
+    font-weight: 500;
+    text-decoration: none;
+}
+.fa-linkedin{
+    padding: 14px;
+}
+
+@media (max-width:991px){
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a{
+        text-decoration: none;
+        font-size: 1.6em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(close.jpg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2{
+        font-size: 3em;
+        color: #000000;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row1 .col50{
+        margin-left: 260px;
+        margin-top: 15px;
+    }
+    .menu .content{
+        margin-top: 20px;
+    }
+    .menu .content .box{
+        margin: 10px;
+    }
+    .menu .content .box .imgBx{
+        height: 260px;
+    }
+    .title{
+        text-align: center;
+    }
+    .about .titleText{
+        text-align: center;
+    }
+    .titleText{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .contactForm{
+        margin-left: 5px;
+    }
+    
+}
+
+@media (max-width:450px) {
+    .banner .content h2{
+        font-size: 2.2em;
+        color: #000000;
+    }
+    .row1 .col50{
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .serviceStyle{
+        margin-left: -51px;
+        margin-top: -47px;
+    }
+
+}
+
+
